@@ -6,7 +6,7 @@ const WeatherCardContainer = () => {
     const { weatherData } = useContext(WeatherContext)
     return (
         weatherData.map((weather) => (
-            <WeatherCard temp={weather.temp} humidity={weather.humidity} pressure={weather.pressure} />
+            <WeatherCard temp={weather.temp} humidity={weather.humidity} pressure={weather.pressure} icon={weather.weather[0].icon} />
         ))
 
     )
