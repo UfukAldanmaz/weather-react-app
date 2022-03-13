@@ -3,10 +3,12 @@ import WeatherContext from "../Contexts/WeatherContext"
 import WeatherCard from "./WeatherCard"
 
 const WeatherCardContainer = () => {
-    const { weatherData, cityName } = useContext(WeatherContext)
-    const { temp, humidity, pressure } = weatherData
+    const { weatherData } = useContext(WeatherContext)
     return (
-        <WeatherCard temp={temp} humidity={humidity} pressure={pressure} cityName={cityName} />
+        weatherData.map((weather) => (
+            <WeatherCard temp={weather.temp} humidity={weather.humidity} pressure={weather.pressure} />
+        ))
+
     )
 }
 

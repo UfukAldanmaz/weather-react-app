@@ -1,13 +1,12 @@
 import React from "react"
 
-const WeatherCard = ({ cityName, temp, humidity, pressure }) => {
+const WeatherCard = ({ temp, humidity, pressure }) => {
     return (
         <div className="weather-data">
-            <p className="weather__tagline">Weather forecast for <span className="weather-data__city">{cityName}</span></p>
             <div className="weather-data__box">
                 <span className="weather-data__property">
                     <p className="weather-data__title">Temperature</p>
-                    <p className="weather-data__value">{temp}</p>
+                    <p className="weather-data__value">{temp.day}</p>
                 </span>
                 <span className="weather-data__property">
                     <p className="weather-data__title">Humidity</p>

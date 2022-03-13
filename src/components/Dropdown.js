@@ -1,20 +1,22 @@
-
 import CityData from './CityData.json';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import CurrentCity from './CurrentCity';
-
+import WeatherContext from '../Contexts/WeatherContext';
 
 const Dropdown = () => {
-
+    const { api_call } = useContext(WeatherContext)
     const [currentCityName, setCurrentCityName] = useState("Adana");
 
     function handleChange(e) {
+        e.preventDefault()
         const selectedCityId = e.target.value;
-        const selectedCity = CityData.Cities.find(city => city.id == selectedCityId);
+        const selectedCity = CityData.Cities.find(city => city.id === Number(selectedCityId));
         setCurrentCityName(selectedCity.name)
+
+        api_call(selectedCity);
     }
     return (
-        <div class="dropdown">
+        <div className="dropdown" >
             <select onChange={handleChange}>
                 {CityData.Cities.map((result) =>
                 (<option
@@ -23,7 +25,7 @@ const Dropdown = () => {
                 </option>))}
             </select>
             <CurrentCity cityName={currentCityName} />
-        </div>)
+        </div >)
 }
 
 export default Dropdown;
