@@ -2,7 +2,7 @@
 function CurrentCity(props) {
     return (
         <div>
-            <p className="weather__tagline">Weather forecast for <span className="weather-data__city">{props.cityName}</span></p>
+            <p><span>{props.cityName}</span> için hava durumu;</p>
         </div>
     )
 }

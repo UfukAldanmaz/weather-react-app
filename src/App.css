@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  background-color: #ecf3fa;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(147, 206, 229, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+}

@@ -5,7 +5,7 @@ import WeatherContext from '../Contexts/WeatherContext';
 
 const Dropdown = () => {
     const { api_call } = useContext(WeatherContext)
-    const [currentCityName, setCurrentCityName] = useState("Adana");
+    const [currentCityName, setCurrentCityName] = useState();
 
     function handleChange(e) {
         e.preventDefault()

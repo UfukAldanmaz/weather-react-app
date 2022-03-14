@@ -1,7 +1,8 @@
 
 const Header = () => {
     return (
-        <h1>forecast</h1>
+
+        <h1>Hava Durumu</h1>
     )
 }
 
