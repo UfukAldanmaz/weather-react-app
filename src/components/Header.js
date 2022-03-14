@@ -2,7 +2,7 @@
 const Header = () => {
     return (
 
-        <h1>Hava Durumu</h1>
+        <h1 style={{ color: "#FF6433" }}>Hava Durumu</h1>
     )
 }
 

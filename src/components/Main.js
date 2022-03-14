@@ -31,7 +31,7 @@ const Main = () => {
   }
 
   return (
-    <div> Weather Forecast
+    <div>
       <Header />
       <Content>
         <WeatherContext.Provider value={{ api_call, weatherData }}>

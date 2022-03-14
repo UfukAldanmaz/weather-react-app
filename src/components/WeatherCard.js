@@ -10,20 +10,19 @@ const WeatherCard = ({ day, temp, humidity, icon }) => {
 
     return (
         <div className="grid-item">
-            <div className="weather-data__box">
-                <span className="weather-data__property">
-                    <p className="weather-data__title"></p>
-                    <p className="weather-data__value"><strong>{dayOfWeek}</strong></p>
+            <div>
+                <span>
+                    <p><strong>{dayOfWeek}</strong></p>
                     <hr />
                 </span>
-                <span className="weather-data__property">
+                <span>
                     <p>Sıcaklık</p>
-                    <p className="weather-data__value">{temp.day} °C </p>
+                    <p>{temp.day} °C </p>
                     <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} />
                 </span>
-                <span className="weather-data__property">
-                    <p className="weather-data__title">Nem</p>
-                    <p className="weather-data__value">{humidity}</p>
+                <span>
+                    <p>Nem</p>
+                    <p>{humidity}</p>
                     <img src="https://cdn-icons.flaticon.com/png/512/3262/premium/3262968.png?token=exp=1647268878~hmac=345b7e64c8f1419890ce5dd06441c002"
                         width="35"
                         height="40" />
