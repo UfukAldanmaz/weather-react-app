@@ -18,14 +18,15 @@ const WeatherCard = ({ day, temp, humidity, icon }) => {
                 <span>
                     <p>Sıcaklık</p>
                     <p>{temp.day} °C </p>
-                    <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} />
+                    <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="icons" />
                 </span>
                 <span>
                     <p>Nem</p>
                     <p>{humidity}</p>
                     <img src="https://cdn-icons.flaticon.com/png/512/3262/premium/3262968.png?token=exp=1647268878~hmac=345b7e64c8f1419890ce5dd06441c002"
                         width="35"
-                        height="40" />
+                        height="40"
+                        alt="humidity" />
                 </span>
             </div>
         </div>
