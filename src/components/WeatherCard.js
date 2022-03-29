@@ -1,4 +1,5 @@
 import React from "react"
+import humidityImg from '../assets/humidity.png';
 
 const WeatherCard = ({ day, temp, humidity, icon }) => {
 
@@ -23,7 +24,7 @@ const WeatherCard = ({ day, temp, humidity, icon }) => {
                 <span>
                     <p>Nem</p>
                     <p>{humidity}</p>
-                    <img src="https://cdn-icons.flaticon.com/png/512/3262/premium/3262968.png?token=exp=1647268878~hmac=345b7e64c8f1419890ce5dd06441c002"
+                    <img src={humidityImg}
                         width="35"
                         height="40"
                         alt="humidity" />

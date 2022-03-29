@@ -40,6 +40,7 @@ const Main = () => {
         </WeatherContext.Provider>
         {Error !== null && <Error error={error} />}
         <DateTime />
+        <a href="https://www.flaticon.com/free-icons/humidity" title="humidity icons">Humidity icons created by Freepik - Flaticon</a>
       </Content>
     </div>
   )
