@@ -1,3 +1,7 @@
+You can reach the live website on https://ufukaldanmaz.github.io/weather-react-app/
+
+![havadrm](https://user-images.githubusercontent.com/61687476/161771001-b3eb9540-018e-41e0-add2-f4622c788296.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
